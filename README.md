@@ -1,6 +1,6 @@
 # SimpleIrBlaster
 
-Use this code to build an Arduino device that can send IR device commands from your PC. Commands are sent the serial port. To assist with that, consider using https://github.com/p-elsie/ttyUtil
+Use this code to build an Arduino device that can send IR device commands from your PC. Commands are sent the serial port. To assist with that, consider using https://github.com/p-elsie/ttyUtil , and consider EventGhost too. 
 
 Usage:
 
