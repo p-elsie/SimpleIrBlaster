@@ -55,13 +55,13 @@ void loop() {
     }
     else {
       // look for four valid integers in the incoming serial stream:
-      uint8_t  type = Serial.parseInt(SKIP_NONE); //returns 0 after timeout, if an integer is not found
+      uint8_t  type = Serial.parseInt(); 
       Serial.read();
-      uint16_t sAddress = Serial.parseInt(SKIP_NONE);
+      uint16_t sAddress = Serial.parseInt();
       Serial.read();
-      uint8_t  sCommand = Serial.parseInt(SKIP_NONE);
+      uint8_t  sCommand = Serial.parseInt();
       Serial.read();
-      uint8_t  sRepeats = Serial.parseInt(SKIP_NONE);
+      uint8_t  sRepeats = Serial.parseInt();
   
       // look for the newline. That's the end of your sentence:
       if (Serial.read() == '\n') 
